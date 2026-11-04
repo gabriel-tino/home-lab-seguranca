@@ -13,7 +13,6 @@ Laboratório de segurança isolado com Kali Linux e Ubuntu Server no VirtualBox
 
 ## 2. Arquitetura
 
-> Insira o diagrama (draw.io) em `docs/topologia.png` e explique em poucas linhas.
 
 | VM | Sistema | Função | IP | Rede |
 |---|---|---|---|---|
@@ -33,7 +32,6 @@ Laboratório de segurança isolado com Kali Linux e Ubuntu Server no VirtualBox
 
 ## 4. Decisões de projeto
 
-> A seção mais importante. Para cada decisão, escreva **o que escolhi, por quê e o que descartei**.
 
 - **Rede interna (e não NAT ou Bridge):** Manter minha rede externa segura de ameaças.
 - **IP estático (e não DHCP):** Para não correr o risco do lab se comunicar com a rede externa.
@@ -41,15 +39,12 @@ Laboratório de segurança isolado com Kali Linux e Ubuntu Server no VirtualBox
 
 ## 5. Como foi configurado
 
-
 1. Download e verificação das imagens (hash SHA256).
 2. Criação das VMs e configuração da rede interna `labnet`.
 3. IP estático no Ubuntu Server com netplan (ver [`configs/99-lab.yaml`](configs/99-lab.yaml)).
 4. IP estático no Kali com `nmtui`.
 
 ## 6. Validação
-
-> Cole os prints em `imagens/` e referencie aqui. Cada print precisa de uma legenda dizendo o que prova.
 
 | Teste | Resultado esperado | Evidência |
 |---|---|---|
