@@ -17,7 +17,7 @@ Registro dos problemas que surgiram durante a montagem do lab, com o que causou 
 
 - **Sintoma:** depois da instalação do Ubuntu Server, eu não lembrava o nome de usuário para fazer login.
 - **Causa:** o Ubuntu não tem usuário padrão. O usuário é o que se cria na instalação, e eu não o anotei.
-- **Solução:** o prompt do terminal mostra o usuário e a máquina no formato `usuario@hostname` (no meu caso, `gabriel@ubuntuVM`). *(Confirme aqui, com as suas palavras, como você conseguiu entrar na VM.)*
+- **Solução:** o prompt do terminal mostra o usuário e a máquina no formato `usuario@hostname` (no meu caso, `gabriel@ubuntuVM`). 
 - **Aprendizado:** manter um arquivo de anotações do lab com usuários, hostnames e IPs de cada VM (usando senhas só de laboratório).
 
 ---
@@ -34,7 +34,7 @@ Registro dos problemas que surgiram durante a montagem do lab, com o que causou 
 ## 4. A opção "Rede interna" não aparecia no VirtualBox
 
 - **Sintoma:** na configuração de rede da VM, só havia NAT e Bridge na lista.
-- **Causa:** *(escreva aqui o que causava isso na sua tela e onde você encontrou a opção.)*
+- **Causa:** nas configurações mudei a opção de "Basic" para "Expert"
 - **Solução:** encontrei a opção e configurei os dois adaptadores em **Rede interna**, com o mesmo nome (`labnet`).
 - **Aprendizado:** NAT e Bridge usam a conexão do notebook e, portanto, a rede do trabalho. Só a **Rede interna** mantém o lab isolado, e por isso foi a escolha para este projeto.
 
