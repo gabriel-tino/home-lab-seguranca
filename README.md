@@ -3,13 +3,13 @@ Laboratório de segurança isolado com Kali Linux e Ubuntu Server no VirtualBox
 
 # Home Lab de Segurança
 
-> Escreva aqui 1 ou 2 frases: o que é este projeto e o que você aprendeu. Exemplo: "Laboratório isolado com Kali Linux e Ubuntu Server no VirtualBox, para praticar redes, Linux e segurança com segurança."
+>Laboratório isolado com Kali Linux e Ubuntu Server no VirtualBox, para praticar redes, Linux e segurança com segurança.
 
 ![Topologia do lab](docs/topologia.png)
 
 ## 1. Objetivo
 
-> 2 a 3 frases, com as suas palavras. Por que você montou este lab? O que queria aprender? Por que o isolamento era importante?
+> Aprofundar meus estudos em cibersegurança e em redes. 
 
 ## 2. Arquitetura
 
@@ -20,11 +20,10 @@ Laboratório de segurança isolado com Kali Linux e Ubuntu Server no VirtualBox
 | (preencher) | Kali Linux | Máquina de ataque / análise | 10.10.10.10/24 | Rede interna `labnet` |
 | `ubuntuVM` | Ubuntu Server | Alvo e futuro servidor de SIEM | 10.10.10.20/24 | Rede interna `labnet` |
 
-> Escreva uma linha explicando que o lab **não tem acesso à internet nem à rede externa**.
+> Lab não tem acesso a internet e nem a rede externa por motivos de segurança.
 
 ## 3. Ambiente
 
-> Preencha com os dados reais.
 
 - **Hospedeiro:** (SO do notebook, RAM, CPU)
 - **Hypervisor:** VirtualBox (versão: ___)
@@ -36,14 +35,12 @@ Laboratório de segurança isolado com Kali Linux e Ubuntu Server no VirtualBox
 
 > A seção mais importante. Para cada decisão, escreva **o que escolhi, por quê e o que descartei**.
 
-- **Rede interna (e não NAT ou Bridge):** (por quê?)
-- **IP estático (e não DHCP):** (por quê?)
-- **Ubuntu Server (e não Desktop):** (por quê?)
-- **Outros cuidados de isolamento** (área de transferência, pastas compartilhadas, USB): (o que fiz?)
+- **Rede interna (e não NAT ou Bridge):** Manter minha rede externa segura de ameaças.
+- **IP estático (e não DHCP):** Para não correr o risco do lab se comunicar com a rede externa.
+- **Ubuntu Server (e não Desktop):** Por ser mais leve e rápido 
 
 ## 5. Como foi configurado
 
-> Resuma os passos principais, com as suas palavras. Não precisa listar todos os cliques.
 
 1. Download e verificação das imagens (hash SHA256).
 2. Criação das VMs e configuração da rede interna `labnet`.
