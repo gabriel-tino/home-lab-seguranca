@@ -58,13 +58,17 @@ Laboratório de segurança isolado com Kali Linux e Ubuntu Server no VirtualBox
 
 Veja o arquivo completo em [`docs/problemas-e-solucoes.md`](docs/problemas-e-solucoes.md).
 
-## 8. Próximos passos
+## 8. Pentest de aplicação web (Em cartaz)
+
+> Além dos testes de rede acima, uso este lab para avaliar a segurança do meu próprio app web **Em cartaz** (catálogo de filmes). Os relatórios ficam em [`pentest-em-cartaz/`](pentest-em-cartaz/) — uma sessão por arquivo.
+
+## 9. Próximos passos
 
 - [ ] Scan com `nmap` do Kali contra o Ubuntu, interpretando as portas abertas
 - [ ] SIEM com Wazuh (agente no Kali)
 - [ ] Simulação de incidente e relatório
 - [ ] Honeypot (Cowrie) em ambiente isolado
 
-## 9. Aviso
+## 10. Aviso
 
 Todos os testes deste projeto foram feitos apenas em ambiente próprio, virtual e isolado. Senhas usadas são exclusivas do laboratório e não são divulgadas aqui.
